@@ -1,10 +1,23 @@
 footer {
   display: flex;
-  gap: 24px;
-  padding-block: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-block: 16px;
   font: 14px/150% var(--font-family);
 }
 
-footer span:nth-child(1) {
-  margin-right: auto;
+footer .terms {
+  display: flex;
+  gap: 24px;
+}
+
+@media (width >= 1280px) {
+  footer {
+    flex-direction: row;
+
+    & .brand {
+      margin-right: auto;
+    }
+  }
 }
