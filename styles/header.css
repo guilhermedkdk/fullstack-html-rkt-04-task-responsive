@@ -11,6 +11,7 @@ header .container {
 #profile {
   display: flex;
   flex-direction: column;
+
   gap: 16px;
 }
 
@@ -19,26 +20,30 @@ header .container {
 }
 
 #profile img {
+  object-fit: cover;
+
   width: 120px;
   height: 120px;
-  object-fit: cover;
   border-radius: 50%;
 }
 
 #profile h1 {
+  margin-bottom: 8px;
+
   font: var(--text-lg);
   font-size: 1.5rem;
   color: var(--text-color-primary);
-  margin-bottom: 8px;
 }
 
 #info {
-  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+
   width: 280px;
+  gap: 16px;
   margin-top: 32px;
+
+  list-style: none;
 }
 
 #info li {
